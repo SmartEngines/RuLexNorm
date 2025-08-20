@@ -26,16 +26,16 @@ Each line within an entry follows this structure:
 The normalization can be of three types:
 1.  **One-to-One (1-1):** A single token is normalized to a single word.
    ```
-   Прив! \t Привет!
+   Прив! -> Привет!
    ```
 2.  **One-to-Many (1-N):** A single token is normalized to multiple words, separated by a space.
    ```
-   Чд? \t Что делаешь?
+   Чд? -> Что делаешь?
    ```
 3.  **Many-to-One (N-1):** Multiple consecutive tokens are merged into a single normalized form. The normalization is provided for the first token, and subsequent tokens in the sequence have an empty string as their normalized form.
    ```
-   Чуть \t Чуть-чуть
-   чуть \t
+   Чуть -> Чуть-чуть
+   чуть ->
    ```
 
 ## Authors
